@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EPPlus" Version="7.6.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OperatePlanModule.Shared\OperatePlanModule.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MatrixLibrary">
+      <HintPath>..\..\MatrixLibrary\bin\Debug\net8.0\MatrixLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
